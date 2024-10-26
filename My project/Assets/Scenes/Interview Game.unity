@@ -1407,8 +1407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e29493ffc4464361abcc79cd58dfa51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionText: {fileID: 0}
-  submitButton: {fileID: 0}
+  questionText: {fileID: 1835130163}
+  submitButton: {fileID: 466341798}
 --- !u!1 &1835130161
 GameObject:
   m_ObjectHideFlags: 0
