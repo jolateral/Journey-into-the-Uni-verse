@@ -19,7 +19,7 @@ public class HatCustomizer : MonoBehaviour
     {
 
         currentHatIndex = (currentHatIndex + 1) % (hatSprites.Count);
-        if (currentHatIndex>= GameManager.score/requiredScore) {
+        if (currentHatIndex> GameManager.score/requiredScore) {
             currentHatIndex=0;
         }
         UpdateHat();
@@ -28,7 +28,7 @@ public class HatCustomizer : MonoBehaviour
     public void PreviousHat()
     {
         currentHatIndex = (currentHatIndex - 1 + hatSprites.Count) % hatSprites.Count;
-        if (currentHatIndex>= GameManager.score/requiredScore) {
+        if (currentHatIndex> GameManager.score/requiredScore) {
             currentHatIndex=0;
         }
         UpdateHat();
