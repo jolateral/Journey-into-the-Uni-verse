@@ -167,43 +167,43 @@ public class DataManager : MonoBehaviour
         if(totalLength >= 150)
         {
             score = "Your Score: 10/10";
-            scoreint = 100;
+            scoreint = 10;
         }
         else if (totalLength >= 130)
         {
             score = "Your Score: 9/10";
-            scoreint = 90;
+            scoreint = 9;
 
         }
         else if (totalLength >= 110)
         {
             score = "Your Score: 8/10";
-            scoreint = 80;
+            scoreint = 8;
         }
         else if (totalLength >= 90)
         {
             score = "Your Score: 7/10";
-            scoreint = 70;
+            scoreint = 7;
         }
         else if (totalLength >= 70)
         {
             score = "Your Score: 6/10";
-            scoreint = 60;
+            scoreint = 6;
         }
         else if (totalLength >= 50)
         {
             score = "Your Score: 5/10";
-            scoreint = 50;
+            scoreint = 5;
         }
         else if (totalLength >= 30)
         {
             score = "Your Score: 4/10";
-            scoreint = 40;
+            scoreint = 4;
         }
         else if (totalLength >= 10)
         {
             score = "Your Score: 2/10";
-            scoreint = 20;
+            scoreint = 2;
         }
         else 
         {
