@@ -13,7 +13,6 @@ public class GetScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Updating text...");
         text.text="Score: "+ GameManager.score.ToString();
     }
 }
