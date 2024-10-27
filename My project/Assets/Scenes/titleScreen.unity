@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas1: {fileID: 103366840}
-  canvas2: {fileID: 1870736780}
+  canvas2: {fileID: 958590445}
 --- !u!1 &1290196053
 GameObject:
   m_ObjectHideFlags: 0
