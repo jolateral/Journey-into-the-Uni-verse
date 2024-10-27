@@ -30,7 +30,7 @@ public class ActuallyHatCustomizer : MonoBehaviour
     public void NextHat()
     {
         currentHatIndex = (currentHatIndex + 1) % hatImages.Count;
-        if (currentHatIndex>= GameManager.score/requiredScore) {
+        if (currentHatIndex> GameManager.score/requiredScore) {
             currentHatIndex=0;
         }
         for (int i=0; i<hatImages.Count;i++) {
@@ -50,7 +50,7 @@ public class ActuallyHatCustomizer : MonoBehaviour
     {
         
         currentHatIndex = (currentHatIndex - 1 + hatImages.Count) % hatImages.Count;
-        if (currentHatIndex>= GameManager.score/requiredScore) {
+        if (currentHatIndex> GameManager.score/requiredScore) {
             currentHatIndex=0;
         }
         for (int i=0; i<hatImages.Count;i++) {
