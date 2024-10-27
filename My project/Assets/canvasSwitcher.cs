@@ -13,4 +13,12 @@ public class CanvasSwitcher : MonoBehaviour
         canvas1.gameObject.SetActive(false);
         canvas2.gameObject.SetActive(true);
     }
+
+    // Method to switch from Canvas2 to Canvas1
+    public void SwitchToCanvas1()
+    {
+        // Deactivate Canvas1 and activate Canvas2
+        canvas2.gameObject.SetActive(false);
+        canvas1.gameObject.SetActive(true);
+    }
 }
