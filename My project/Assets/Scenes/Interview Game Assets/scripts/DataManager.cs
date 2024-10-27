@@ -209,13 +209,15 @@ public class DataManager : MonoBehaviour
         {
             score = "Your Score: 0/10";
         }
-        
+
         if (score_text != null)
         {
             score_text.text = score;
+            GameManager.score += scoreint;
+            Debug.Log("Score updated: " + score + " | Total Score: " + GameManager.score);
+
         }
 
-        GameManager.score += scoreint;
 
         
     }
