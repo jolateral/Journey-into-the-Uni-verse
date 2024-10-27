@@ -4,20 +4,20 @@ using TMPro;
 
 public class SwitchButton : MonoBehaviour
 {
-    public TMP_Text uiText; 
-    void Start()
+    public GameObject image1; 
+    public GameObject image2;
+    
+    public void ChangeImage()
     {
-        uiText = GetComponentInChildren<TMP_Text>(); 
-
-    }
-    public void ChangeText()
-    {
-        print(uiText.text.ToString());
-        if (uiText.text.ToString()=="Not Done") {
-            
-            uiText.text = "Done";
-        } else {
-            uiText.text = "Not Done";
+        if (image1.activeSelf)
+        {
+            image1.SetActive(false);  // Deactivate Image1
+            image2.SetActive(true);   // Activate Image2
+        }
+        else
+        {
+            image1.SetActive(true);   // Activate Image1
+            image2.SetActive(false);  // Deactivate Image2
         }
     }
 }
