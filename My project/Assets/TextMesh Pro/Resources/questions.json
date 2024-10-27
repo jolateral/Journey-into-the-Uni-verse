@@ -1,0 +1,32 @@
+{
+  "questions": [
+    { "questionText": "Tell me about yourself." },
+    { "questionText": "Why do you want to attend this university?" },
+    { "questionText": "What are your academic strengths?" },
+    { "questionText": "What are your academic weaknesses, and how do you address them?" },
+    { "questionText": "Describe a significant challenge you've overcome." },
+    { "questionText": "What subject do you enjoy the most, and why?" },
+    { "questionText": "How do you plan to contribute to our campus community?" },
+    { "questionText": "What are your career goals, and how will this program help you achieve them?" },
+    { "questionText": "Tell me about a time you demonstrated leadership skills." },
+    { "questionText": "Describe a project or accomplishment that you are particularly proud of." },
+    { "questionText": "How do you manage your time and responsibilities?" },
+    { "questionText": "What extracurricular activities are you involved in, and why?" },
+    { "questionText": "How do you handle stress and pressure?" },
+    { "questionText": "What do you consider your greatest achievement?" },
+    { "questionText": "Why did you choose your intended major?" },
+    { "questionText": "How would your friends describe you?" },
+    { "questionText": "Describe a book or article that had a significant impact on you." },
+    { "questionText": "Tell me about a time you failed and what you learned from it." },
+    { "questionText": "What qualities make you a good fit for this university?" },
+    { "questionText": "Describe an ethical dilemma you faced and how you handled it." },
+    { "questionText": "What is your biggest passion, and why?" },
+    { "questionText": "How do you stay motivated in your studies and other responsibilities?" },
+    { "questionText": "If you could change one thing about your high school experience, what would it be?" },
+    { "questionText": "What role do you usually take in group projects?" },
+    { "questionText": "What unique perspective can you bring to this university?" },
+    { "questionText": "Describe a teacher or mentor who has influenced you." },
+    { "questionText": "What are you hoping to gain from your college experience?" },
+    { "questionText": "Where do you see yourself in five years?" }
+  ]
+}
