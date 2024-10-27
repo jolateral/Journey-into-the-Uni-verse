@@ -8,6 +8,7 @@ public class HatCustomizer : MonoBehaviour
     public Image hatImage; // The Image component that will display the hat
     private int currentHatIndex = 0;
 
+    private int requiredScore = 10;
     void Start()
     {
         // Display the first hat by default
@@ -16,14 +17,20 @@ public class HatCustomizer : MonoBehaviour
 
     public void NextHat()
     {
-        currentHatIndex = (currentHatIndex + 1) % hatSprites.Count;
-        print(currentHatIndex);
+
+        currentHatIndex = (currentHatIndex + 1) % (hatSprites.Count);
+        if (currentHatIndex>= GameManager.score/requiredScore) {
+            currentHatIndex=0;
+        }
         UpdateHat();
     }
 
     public void PreviousHat()
     {
         currentHatIndex = (currentHatIndex - 1 + hatSprites.Count) % hatSprites.Count;
+        if (currentHatIndex>= GameManager.score/requiredScore) {
+            currentHatIndex=0;
+        }
         UpdateHat();
     }
 
