@@ -23,7 +23,7 @@ public class SwitchButton : MonoBehaviour
         Debug.Log(filePath);
 
         // Load previous data if it exists
-        if(LoadButtonDataFromJson().currentIndex.Count == 0) {
+        if(! File.Exists(filePath)) {
             ButtonData buttonData = new ButtonData{
                 currentIndex = new List<int>() {0,0,0,0,0,0,0}
             };
