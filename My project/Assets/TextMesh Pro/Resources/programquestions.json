@@ -3,20 +3,213 @@
         {
             "questionsText": "Which of these learning styles best describes you?",
             "answers": [
-                { "answerText": "A. Step-by-step, with clear processes" },
-                { "answerText": "B. Hands-on and practical" },
-                { "answerText": "C. Discussion-based, open to opinions" },
-                { "answerText": "D. Creative and exploratory" }
+
+                {
+                    "answerText": "A. Step-by-step, with clear processes",
+                    "points": {
+                        "cs_eng_math": 4,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 1,
+                        "arch_music": 2
+                    }
+                },
+                {
+                    "answerText": "B. Hands-on and practical",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 4,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 3
+                    }
+                },
+                {
+                    "answerText": "C. Discussion-based, open to opinions",
+                    "points": {
+                        "cs_eng_math": 2,
+                        "life_sci_kin": 1,
+                        "soc_sci_humanities_business": 4,
+                        "arch_music": 3
+                    }
+                },
+                {
+                    "answerText": "D. Creative and exploratory",
+                    "points": {
+                        "cs_eng_math": 2,
+                        "life_sci_kin": 1,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 4
+                    }
+                }
             ]
         },
         {
             "questionsText": "If you could join a research project, which topic would interest you the most?",
             "answers": [
-                { "answerText": "A. Finding ways to improve city systems" },
-                { "answerText": "B. Studying the effects of physical activity on the mind" },
-                { "answerText": "C. Observing how people respond to new changes" },
-                { "answerText": "D. Exploring how designs affect mood" }
+
+                {
+                    "answerText": "A. Finding ways to improve city systems",
+                    "points": {
+                        "cs_eng_math": 4,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "B. Studying the effects of physical activity on the mind",
+                    "points": {
+                        "cs_eng_math": 3,
+                        "life_sci_kin": 4,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "C. Observing how people respond to new changes",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 4,
+                        "arch_music": 2
+                    }
+                },
+                {
+                    "answerText": "D. Exploring how designs affect mood",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 4
+                    }
+                }
+            ]
+        },
+        {
+            "questionsText": "Which type of museum exhibit would you find most interesting?",
+            "answers": [
+
+                {
+                    "answerText": "A. Hands-on science and technology",
+                    "points": {
+                        "cs_eng_math": 4,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "B. Human anatomy and health",
+                    "points": {
+                        "cs_eng_math": 3,
+                        "life_sci_kin": 4,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "C. History and social change",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 4,
+                        "arch_music": 3
+                    }
+                },
+                {
+                    "answerText": "D. Interactive art and visuals",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 4
+                    }
+                }
+            ]
+        },
+        {
+            "questionsText": "What motivates you the most when working on a long-term goal?",
+            "answers": [
+
+                {
+                    "answerText": "A. Achieving a clear solution",
+                    "points": {
+                        "cs_eng_math": 4,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "B. Gaining insights to improve health",
+                    "points": {
+                        "cs_eng_math": 2,
+                        "life_sci_kin": 4,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "C. Making a positive impact on others",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 4,
+                        "arch_music": 3
+                    }
+                },
+                {
+                    "answerText": "D. Creating something original",
+                    "points": {
+                        "cs_eng_math": 2,
+                        "life_sci_kin": 1,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 4
+                    }
+                }
+            ]
+        },
+        {
+            "questionsText": "Which setting sounds most appealing to you?",
+            "answers": [
+
+                {
+                    "answerText": "A. Lab with tools and tech",
+                    "points": {
+                        "cs_eng_math": 4,
+                        "life_sci_kin": 3,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "B. Research center focused on health",
+                    "points": {
+                        "cs_eng_math": 3,
+                        "life_sci_kin": 4,
+                        "soc_sci_humanities_business": 2,
+                        "arch_music": 1
+                    }
+                },
+                {
+                    "answerText": "C. Collaborative space for ideas",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 4,
+                        "arch_music": 3
+                    }
+                },
+                {
+                    "answerText": "D. Studio or creative workspace",
+                    "points": {
+                        "cs_eng_math": 1,
+                        "life_sci_kin": 2,
+                        "soc_sci_humanities_business": 3,
+                        "arch_music": 4
+                    }
+                }
             ]
         }
     ]
+
 }
