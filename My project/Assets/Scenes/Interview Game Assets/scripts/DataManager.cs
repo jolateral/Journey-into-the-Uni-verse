@@ -162,47 +162,61 @@ public class DataManager : MonoBehaviour
     private void DetermineScore()
     {
         string score = "";
+        int scoreint = 0;
 
         if(totalLength >= 150)
         {
             score = "Your Score: 10/10";
+            scoreint = 10;
         }
         else if (totalLength >= 130)
         {
             score = "Your Score: 9/10";
+            scoreint = 9;
+
         }
         else if (totalLength >= 110)
         {
             score = "Your Score: 8/10";
+            scoreint = 8;
         }
         else if (totalLength >= 90)
         {
             score = "Your Score: 7/10";
+            scoreint = 7;
         }
         else if (totalLength >= 70)
         {
             score = "Your Score: 6/10";
+            scoreint = 6;
         }
         else if (totalLength >= 50)
         {
             score = "Your Score: 5/10";
+            scoreint = 5;
         }
         else if (totalLength >= 30)
         {
             score = "Your Score: 4/10";
+            scoreint = 4;
         }
         else if (totalLength >= 10)
         {
             score = "Your Score: 2/10";
+            scoreint = 2;
         }
         else 
         {
             score = "Your Score: 0/10";
         }
+        
         if (score_text != null)
         {
             score_text.text = score;
         }
+
+        GameManager.score += scoreint;
+
         
     }
 }
