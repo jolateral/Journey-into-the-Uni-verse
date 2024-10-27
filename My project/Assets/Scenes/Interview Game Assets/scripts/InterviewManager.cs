@@ -7,8 +7,8 @@ public class InterviewManager : MonoBehaviour
 {
     public TMP_Text questionText; // UI Text to display the question
     public Button submitButton; // UI Button for submitting answers
-    private QuestionList questionList; // List of questions
-    private Question currentQuestion; // Current question being displayed
+    private InterviewQuestionList questionList; // List of questions
+    private InterviewQuestion currentQuestion; // Current question being displayed
 
     private void Start()
     {
@@ -29,7 +29,7 @@ public class InterviewManager : MonoBehaviour
     private void LoadQuestions()
     {
         TextAsset json = Resources.Load<TextAsset>("questions");
-        questionList = JsonUtility.FromJson<QuestionList>(json.text);
+        questionList = JsonUtility.FromJson<InterviewQuestionList>(json.text);
 
         // Debug to confirm questions were loaded
         if (questionList == null || questionList.questions.Length == 0)

@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitcher : MonoBehaviour
+public class Scene4Interview : MonoBehaviour
 {
-    public void SwitchToScene(string sceneName)
+    public void Switch2Scene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }

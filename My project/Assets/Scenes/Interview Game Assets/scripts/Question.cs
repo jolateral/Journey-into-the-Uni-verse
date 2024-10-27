@@ -1,14 +1,14 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Question
+public class InterviewQuestion
 {
     public string questionText;
 }
 
 [System.Serializable]
-public class QuestionList
+public class InterviewQuestionList
 {
-    public Question[] questions;
+    public InterviewQuestion[] questions;
 
 }
