@@ -21,4 +21,9 @@ public class ReadInterviewInput : MonoBehaviour
         Debug.Log(input);
 
     }
+
+    public string GetInput()
+    {
+        return input;
+    }
 }
