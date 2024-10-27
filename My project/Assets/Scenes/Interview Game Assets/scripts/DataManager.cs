@@ -22,11 +22,14 @@ public class DataManager : MonoBehaviour
     public ReadInterviewInput readInterviewInput;
     private int submitCounter = 0;
     private const int maxCounter = 5;   
+    private int totalLength = 0;
     public GameObject currentCanvas;
     public GameObject nextCanvas;
     public TMP_InputField userInputField; // Reference to the InputField
     public Button submitButton; // Reference to the Submit Button
     private string filePath;
+    public TMP_Text displayText;
+    public TMP_Text score_text;
     private void Awake()
     {
         // Set the file path to the persistent data path
@@ -39,6 +42,8 @@ public class DataManager : MonoBehaviour
             Directory.CreateDirectory(directoryPath);
             Debug.Log("Data directory created at: " + directoryPath);
         }
+
+        nextCanvas.SetActive(false);
     
     }
 
@@ -46,11 +51,12 @@ public class DataManager : MonoBehaviour
         {
             // Add listener to the submit button
             submitButton.onClick.AddListener(OnSubmit);
+            ResetDataFile();
         }
     
      public void OnSubmit()
     {
-        
+
         string inputText = readInterviewInput.GetInput();
         
 
@@ -61,8 +67,10 @@ public class DataManager : MonoBehaviour
         {
             SaveText(inputText); // Save if not empty
             submitCounter++;
+            totalLength += inputText.Length;
             if(submitCounter >= maxCounter)
             {
+                DetermineScore();
                 SwitchCanvas();
             }
             
@@ -79,11 +87,23 @@ public class DataManager : MonoBehaviour
 
         entryList.entries.Add(new TextEntry { entry = text});
 
+        
+
+        if (string.IsNullOrWhiteSpace(text))
+        {
+            Debug.LogWarning("Empty string detected, not saving.");
+            return;
+        }
+        
+
         string json = JsonUtility.ToJson(entryList, true);
 
         File.WriteAllText(filePath, json);
 
         ClearField();
+
+        readInterviewInput.ReadStringInput(""); 
+
 
         
     }
@@ -108,7 +128,81 @@ public class DataManager : MonoBehaviour
     {
         currentCanvas.SetActive(false);
         nextCanvas.SetActive(true);
+        DisplaySavedData();
     }
 
-    
+    private void DisplaySavedData()
+    {
+        TextEntryList entryList = LoadData();
+        string allEntries = "";
+
+        foreach (TextEntry entry in entryList.entries)
+        {
+            allEntries += entry.entry + "\n";
+        }
+
+        if (displayText != null)
+        {
+            displayText.text = allEntries;
+        }
+        else
+        {
+            Debug.LogError("Display Text is not assigned");
+        }
+    }
+
+    private void ResetDataFile()
+    {
+        TextEntryList entryList = new TextEntryList();
+        string json = JsonUtility.ToJson(entryList, true);
+        File.WriteAllText(filePath, json);
+        Debug.Log("Data file has been reset.");
+    }
+
+    private void DetermineScore()
+    {
+        string score = "";
+
+        if(totalLength >= 150)
+        {
+            score = "Your Score: 10/10";
+        }
+        else if (totalLength >= 130)
+        {
+            score = "Your Score: 9/10";
+        }
+        else if (totalLength >= 110)
+        {
+            score = "Your Score: 8/10";
+        }
+        else if (totalLength >= 90)
+        {
+            score = "Your Score: 7/10";
+        }
+        else if (totalLength >= 70)
+        {
+            score = "Your Score: 6/10";
+        }
+        else if (totalLength >= 50)
+        {
+            score = "Your Score: 5/10";
+        }
+        else if (totalLength >= 30)
+        {
+            score = "Your Score: 4/10";
+        }
+        else if (totalLength >= 10)
+        {
+            score = "Your Score: 2/10";
+        }
+        else 
+        {
+            score = "Your Score: 0/10";
+        }
+        if (score_text != null)
+        {
+            score_text.text = score;
+        }
+        
+    }
 }
