@@ -16,6 +16,6 @@ _Journey into the Uni-verse_ aims to support incoming students that have to tack
 
 ### Instructions
 1. Clone the repoitory
-2. Open the folder "Journey into the Uni-verse" in Unity
+2. Open the folder "My Project" in Unity
 3. Go to file > build and run
 4. Play!
