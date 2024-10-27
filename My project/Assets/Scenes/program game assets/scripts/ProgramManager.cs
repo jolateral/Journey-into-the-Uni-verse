@@ -121,22 +121,22 @@ public class ProgramManager : MonoBehaviour
         if (totalScore.cs_eng_math == maxPoints)
         {
             csEngPanel.SetActive(true); // Display panel for CS, Eng, Math
-            GameManager.score += 150;
+            GameManager.score += 10;
         }
         else if (totalScore.life_sci_kin == maxPoints)
         {
             LifeSciKinPanel.SetActive(true); // Display panel for Life Sci, Kin (adjust to appropriate name)
-            GameManager.score += 150;
+            GameManager.score += 10;
         }
         else if (totalScore.soc_sci_humanities_business == maxPoints)
         {
             HumanitiesBusinessPanel.SetActive(true); // Display panel for Soc Sci, Humanities, Business
-            GameManager.score += 150;
+            GameManager.score += 10;
         }
         else if (totalScore.arch_music == maxPoints)
         {
             ArtArchPanel.SetActive(true); // Display panel for Arch + Music
-            GameManager.score += 150;
+            GameManager.score += 10;
         }
     }
 
