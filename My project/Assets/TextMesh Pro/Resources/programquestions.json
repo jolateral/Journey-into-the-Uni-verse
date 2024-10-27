@@ -1,0 +1,22 @@
+{
+    "questions": [
+        {
+            "questionsText": "Which of these learning styles best describes you?",
+            "answers": [
+                { "answerText": "A. Step-by-step, with clear processes" },
+                { "answerText": "B. Hands-on and practical" },
+                { "answerText": "C. Discussion-based, open to opinions" },
+                { "answerText": "D. Creative and exploratory" }
+            ]
+        },
+        {
+            "questionsText": "If you could join a research project, which topic would interest you the most?",
+            "answers": [
+                { "answerText": "A. Finding ways to improve city systems" },
+                { "answerText": "B. Studying the effects of physical activity on the mind" },
+                { "answerText": "C. Observing how people respond to new changes" },
+                { "answerText": "D. Exploring how designs affect mood" }
+            ]
+        }
+    ]
+}
