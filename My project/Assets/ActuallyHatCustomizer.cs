@@ -13,6 +13,7 @@ public class ActuallyHatCustomizer : MonoBehaviour
     void Start()
     {
         // Display the first hat by default
+        //GameManager.score=500;
         for (int i=0; i<hatImages.Count;i++) {
             if (i!=currentHatIndex) {
                 Color color = hatImages[i].color;
